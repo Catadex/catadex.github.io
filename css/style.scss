@@ -17,12 +17,13 @@ $monofont: "Cascadia Code", monospace;
 }
 
 @mixin rankedItems($rank) {
-    $rank2: $rank - 1;
-    &:has(item[data-rank="#{$rank}"]) {
+    $rankBelow: $rank - 1;
+    $rankAbove: $rank + 1;
+    &:has(item[data-rank="#{$rank}"]):not(:has(item[data-rank="#{$rankAbove}"])) {
         item[data-rank="#{$rank}"] {
             --_outline-color: var(--accent-deep);
         }
-        item[data-rank="#{$rank2}"] {
+        item[data-rank="#{$rankBelow}"] {
             --_outline-color: var(--accent-half);
         }
     }

@@ -558,118 +558,118 @@ main > section.list list item span {
 main > section.list list item span:first-of-type {
   background: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="20"]) item[data-rank="20"] {
+main > section.list list:has(item[data-rank="20"]):not(:has(item[data-rank="21"])) item[data-rank="20"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="20"]) item[data-rank="19"] {
+main > section.list list:has(item[data-rank="20"]):not(:has(item[data-rank="21"])) item[data-rank="19"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="19"]) item[data-rank="19"] {
+main > section.list list:has(item[data-rank="19"]):not(:has(item[data-rank="20"])) item[data-rank="19"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="19"]) item[data-rank="18"] {
+main > section.list list:has(item[data-rank="19"]):not(:has(item[data-rank="20"])) item[data-rank="18"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="18"]) item[data-rank="18"] {
+main > section.list list:has(item[data-rank="18"]):not(:has(item[data-rank="19"])) item[data-rank="18"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="18"]) item[data-rank="17"] {
+main > section.list list:has(item[data-rank="18"]):not(:has(item[data-rank="19"])) item[data-rank="17"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="17"]) item[data-rank="17"] {
+main > section.list list:has(item[data-rank="17"]):not(:has(item[data-rank="18"])) item[data-rank="17"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="17"]) item[data-rank="16"] {
+main > section.list list:has(item[data-rank="17"]):not(:has(item[data-rank="18"])) item[data-rank="16"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="16"]) item[data-rank="16"] {
+main > section.list list:has(item[data-rank="16"]):not(:has(item[data-rank="17"])) item[data-rank="16"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="16"]) item[data-rank="15"] {
+main > section.list list:has(item[data-rank="16"]):not(:has(item[data-rank="17"])) item[data-rank="15"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="15"]) item[data-rank="15"] {
+main > section.list list:has(item[data-rank="15"]):not(:has(item[data-rank="16"])) item[data-rank="15"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="15"]) item[data-rank="14"] {
+main > section.list list:has(item[data-rank="15"]):not(:has(item[data-rank="16"])) item[data-rank="14"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="14"]) item[data-rank="14"] {
+main > section.list list:has(item[data-rank="14"]):not(:has(item[data-rank="15"])) item[data-rank="14"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="14"]) item[data-rank="13"] {
+main > section.list list:has(item[data-rank="14"]):not(:has(item[data-rank="15"])) item[data-rank="13"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="13"]) item[data-rank="13"] {
+main > section.list list:has(item[data-rank="13"]):not(:has(item[data-rank="14"])) item[data-rank="13"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="13"]) item[data-rank="12"] {
+main > section.list list:has(item[data-rank="13"]):not(:has(item[data-rank="14"])) item[data-rank="12"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="12"]) item[data-rank="12"] {
+main > section.list list:has(item[data-rank="12"]):not(:has(item[data-rank="13"])) item[data-rank="12"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="12"]) item[data-rank="11"] {
+main > section.list list:has(item[data-rank="12"]):not(:has(item[data-rank="13"])) item[data-rank="11"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="11"]) item[data-rank="11"] {
+main > section.list list:has(item[data-rank="11"]):not(:has(item[data-rank="12"])) item[data-rank="11"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="11"]) item[data-rank="10"] {
+main > section.list list:has(item[data-rank="11"]):not(:has(item[data-rank="12"])) item[data-rank="10"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="10"]) item[data-rank="10"] {
+main > section.list list:has(item[data-rank="10"]):not(:has(item[data-rank="11"])) item[data-rank="10"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="10"]) item[data-rank="9"] {
+main > section.list list:has(item[data-rank="10"]):not(:has(item[data-rank="11"])) item[data-rank="9"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="9"]) item[data-rank="9"] {
+main > section.list list:has(item[data-rank="9"]):not(:has(item[data-rank="10"])) item[data-rank="9"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="9"]) item[data-rank="8"] {
+main > section.list list:has(item[data-rank="9"]):not(:has(item[data-rank="10"])) item[data-rank="8"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="8"]) item[data-rank="8"] {
+main > section.list list:has(item[data-rank="8"]):not(:has(item[data-rank="9"])) item[data-rank="8"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="8"]) item[data-rank="7"] {
+main > section.list list:has(item[data-rank="8"]):not(:has(item[data-rank="9"])) item[data-rank="7"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="7"]) item[data-rank="7"] {
+main > section.list list:has(item[data-rank="7"]):not(:has(item[data-rank="8"])) item[data-rank="7"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="7"]) item[data-rank="6"] {
+main > section.list list:has(item[data-rank="7"]):not(:has(item[data-rank="8"])) item[data-rank="6"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="6"]) item[data-rank="6"] {
+main > section.list list:has(item[data-rank="6"]):not(:has(item[data-rank="7"])) item[data-rank="6"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="6"]) item[data-rank="5"] {
+main > section.list list:has(item[data-rank="6"]):not(:has(item[data-rank="7"])) item[data-rank="5"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="5"]) item[data-rank="5"] {
+main > section.list list:has(item[data-rank="5"]):not(:has(item[data-rank="6"])) item[data-rank="5"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="5"]) item[data-rank="4"] {
+main > section.list list:has(item[data-rank="5"]):not(:has(item[data-rank="6"])) item[data-rank="4"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="4"]) item[data-rank="4"] {
+main > section.list list:has(item[data-rank="4"]):not(:has(item[data-rank="5"])) item[data-rank="4"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="4"]) item[data-rank="3"] {
+main > section.list list:has(item[data-rank="4"]):not(:has(item[data-rank="5"])) item[data-rank="3"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="3"]) item[data-rank="3"] {
+main > section.list list:has(item[data-rank="3"]):not(:has(item[data-rank="4"])) item[data-rank="3"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="3"]) item[data-rank="2"] {
+main > section.list list:has(item[data-rank="3"]):not(:has(item[data-rank="4"])) item[data-rank="2"] {
   --_outline-color: var(--accent-half);
 }
-main > section.list list:has(item[data-rank="2"]) item[data-rank="2"] {
+main > section.list list:has(item[data-rank="2"]):not(:has(item[data-rank="3"])) item[data-rank="2"] {
   --_outline-color: var(--accent-deep);
 }
-main > section.list list:has(item[data-rank="2"]) item[data-rank="1"] {
+main > section.list list:has(item[data-rank="2"]):not(:has(item[data-rank="3"])) item[data-rank="1"] {
   --_outline-color: var(--accent-half);
 }
 main > section.list list:has(item[data-rank]) item[data-rank="0"], main > section.list list:has(item[data-rank]) item[data-rank="1"] {
