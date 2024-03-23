@@ -16,6 +16,18 @@ $monofont: "Cascadia Code", monospace;
     }
 }
 
+@mixin rankedItems($rank) {
+    $rank2: $rank - 1;
+    &:has(item[data-rank="#{$rank}"]) {
+        item[data-rank="#{$rank}"] {
+            --_outline-color: var(--accent-deep);
+        }
+        item[data-rank="#{$rank2}"] {
+            --_outline-color: var(--accent-half);
+        }
+    }
+}
+
 :root {
     --accent-lite: #6ee2f5;
     --accent-half: #6999f2;
@@ -486,9 +498,11 @@ main > section.list {
             display: table;
         }
         item {
+            --_outline-color: transparent;
             cursor: pointer;
             padding: 1rem;
             margin: 0 .5rem;
+            outline: 2px solid var(--_outline-color);
             background: var(--foreground);
             border-radius: $globalradius;
             box-shadow: $globalshadow;
@@ -527,6 +541,30 @@ main > section.list {
                 &:first-of-type {
                     background: var(--accent-deep);
                 }
+            }
+        }
+        @include rankedItems(20);
+        @include rankedItems(19);
+        @include rankedItems(18);
+        @include rankedItems(17);
+        @include rankedItems(16);
+        @include rankedItems(15);
+        @include rankedItems(14);
+        @include rankedItems(13);
+        @include rankedItems(12);
+        @include rankedItems(11);
+        @include rankedItems(10);
+        @include rankedItems(9);
+        @include rankedItems(8);
+        @include rankedItems(7);
+        @include rankedItems(6);
+        @include rankedItems(5);
+        @include rankedItems(4);
+        @include rankedItems(3);
+        @include rankedItems(2);
+        &:has(item[data-rank]) {
+            item[data-rank="0"], item[data-rank="1"] {
+                --_outline-color: transparent !important;
             }
         }
     }
