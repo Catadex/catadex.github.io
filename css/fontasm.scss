@@ -1,0 +1,64 @@
+$version: 20240223081042;
+
+@font-face {
+  font-family: "Fontasm";
+  src: url("../fonts/fontasm.woff2?"+$version) format("woff2"),
+       url("../fonts/fontasm.woff?"+$version) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 1rem "Fontasm";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.fa-catadex::before {
+    content: "\E000";
+  }
+  &.fa-clear::before {
+    content: "\58";
+  }
+  &.fa-search::before {
+    content: "\53";
+  }
+  &.fa-submit::before {
+    content: "\73";
+  }
+  &.fa-edit::before {
+    content: "\E001";
+  }
+  &.fa-qr::before {
+    content: "\E002";
+  }
+  &.fa-copy::before {
+    content: "\E003";
+  }
+  &.fa-tick::before {
+    content: "\E004";
+  }
+  &.fa-fail::before {
+    content: "\E005";
+  }
+  &.fa-click::before {
+    content: "\E006";
+  }
+  &.fa-info::before {
+    content: "\E007";
+  }
+  &.fa-arrow-left::before {
+    content: "\E00D";
+  }
+  &.fa-arrow-right::before {
+    content: "\E00B";
+  }
+  &.fa-arrows-left::before {
+    content: "\E008";
+  }
+  &.fa-arrows-right::before {
+    content: "\E009";
+  }
+}
