@@ -68,6 +68,8 @@ function writeOptions() {
 function writeItem(called,wiki,post,tags,rank) {
     let print = "";
 
+    if (`${rank}` === "undefined") {rank = 0;}
+
     for (let x = 0; x < tags.length; x++) {
         print = print + `<span>${tags[x]}</span>`;
     }
