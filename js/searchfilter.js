@@ -66,6 +66,11 @@ function doSearch() {
     // Produce filtered datalist
     let qData = iteratorUnique.map(index => catDB.data[index]);
 
+    // Inform result priority
+    for (let x = 0; x < iteratorUnique.length; x++) {
+        qData[x].rank = countMap[iteratorUnique[x]];
+    }
+
     // Filter based on config filters
     let qFilter = document.querySelectorAll("section.filter filter[class*='tags']");
 
