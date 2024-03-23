@@ -398,6 +398,7 @@ main > section.search {
             cursor: pointer;
         }
         input[type='text'] {
+            word-spacing: -.3rem;
             font-family: $monofont;
             grid-column: 1/3;
             padding: 1.1rem;
@@ -708,11 +709,14 @@ main > section.filter {
         transform: scale(.95);
     }
     #cName {
+        word-spacing: -.3rem;
         &::before {
             content: "(";
+            padding-right: .5rem;
         }
         &::after {
             content: ")";
+            padding-left: .65rem;
         }
     }
 }
