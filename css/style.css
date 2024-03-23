@@ -758,6 +758,12 @@ main > section.filter filter ftags y.active {
 .logo-home:active {
   transform: scale(0.95);
 }
+.logo-home #cName::before {
+  content: "(";
+}
+.logo-home #cName::after {
+  content: ")";
+}
 
 .no-scroll {
   overflow: hidden;
