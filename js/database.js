@@ -65,14 +65,14 @@ function writeOptions() {
 }
 
 // function for adding items
-function writeItem(called,wiki,post,tags) {
+function writeItem(called,wiki,post,tags,rank) {
     let print = "";
 
     for (let x = 0; x < tags.length; x++) {
         print = print + `<span>${tags[x]}</span>`;
     }
     
-    return `<item class="flex flex-center-v gap g10" data-post="${post}"><a href="${wiki}" target="_blank" class="flex flex-center-h flex-center-v wiki"><i class="fa fa-info"></i></a><ione class="flex flex-column flex-reverse flex-center-v gap g05"><iname>${called}</iname><itags class="flex gap g05">${print}</itags></ione></item>`;
+    return `<item class="flex flex-center-v gap g10" data-rank="${rank}" data-post="${post}"><a href="${wiki}" target="_blank" class="flex flex-center-h flex-center-v wiki"><i class="fa fa-info"></i></a><ione class="flex flex-column flex-reverse flex-center-v gap g05"><iname>${called}</iname><itags class="flex gap g05">${print}</itags></ione></item>`;
 }
 
 // writeItem(catDB.data[0].name,catDB.data[0].year,catDB.data[0].wiki,catDB.data[0].post,catDB.data[0].tags);
@@ -89,8 +89,7 @@ function writePage(num) {
     }
 
     for (let x = start; x < end; x++) {
-        print = print + writeItem(catDB.data[x].name,catDB.data[x].wiki,catDB.data[x].post,catDB.data[x].tags);
-        console.log(catDB.data[x].rank);
+        print = print + writeItem(catDB.data[x].name,catDB.data[x].wiki,catDB.data[x].post,catDB.data[x].tags,catDB.data[x].rank);
     }
 
     secList.innerHTML = print;
