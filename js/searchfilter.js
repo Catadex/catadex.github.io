@@ -44,10 +44,27 @@ function doSearch() {
     }
 
     // Remove duplicates by converting to set and back
-    iterator = Array.from(new Set(iterator));
+    let iteratorUnique = Array.from(new Set(iterator));
+
+    // Rank Results for Most Matches
+    let countMap = {};
+
+    // Count occurrences of each number in iterator
+    iterator.forEach(function(number) {
+        if (countMap[number]) {
+            countMap[number]++;
+        } else {
+            countMap[number] = 1;
+        }
+    });
+
+    // Sort numbers in iteratorUnique based on their counts in countMap
+    iteratorUnique.sort(function(a, b) {
+        return (countMap[b] || 0) - (countMap[a] || 0);
+    });
 
     // Produce filtered datalist
-    let qData = iterator.map(index => catDB.data[index]);
+    let qData = iteratorUnique.map(index => catDB.data[index]);
 
     // Filter based on config filters
     let qFilter = document.querySelectorAll("section.filter filter[class*='tags']");
